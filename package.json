@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "github-api": "^2.3.0",
+    "style-loader": "^0.19.1",
+    
+}

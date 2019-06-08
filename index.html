@@ -1,0 +1,105 @@
+<html> 
+	<head> 
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	 </head> 
+	<body> 
+		<nav>
+			 <ul>
+				<li><a href="#home">Home</a></li>	 
+				<li><a href="#overview">Overview</a></li>
+  				<li><a href="#heatmap">Heatmap</a></li>
+  				<li><a href="#visualizingmeetups">Visualizing Meetups</a></li>
+  				<li><a href="#euristiche">Euristiche</a></li>
+  				<li><a href="#psico">Questionari psicometrici</a></li>
+  				<li><a href="#usertest">User test</a></li>
+  				<li><a href="#aboutus">About us</a></li>
+  			</ul> 
+		</nav> 
+		<div id="home"> 
+				<a href="http://datascience.disco.unimib.it/it/" style="position:absolute;left:0px; top:120px;">
+					<center><img src = "https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/DSunimib.png" width = "80%"><center>
+				</a>
+			<br><br>
+			<h1>
+				<center>Data Visualization Project</center>
+			</h1>
+			<br><br>
+			<h4> 
+				<center>a Meetup data visual experience</center>
+			</h4>
+			<br><br><br><br><br><br><br>
+		</div>
+		
+
+		<img class="arrow" src="arrow.svg" alt="Arrow pointing down." data-href="#overview">
+		<br><br><br><br>
+		<div id="overview"> 
+			<br><br><br><br>
+			 <h2 align="center">&#9741; &nbsp;Overview-Keywords</h2>
+			<hr>
+			<br><br>  
+			<h4 style="position:relative;margin-left:10px" >
+			<!-- Please highlight the keywords such as utenti, gruppi, eventi, topics and so on! -->
+			Meetup è stato creato nel 2002 come piattaforma per mettere in contatto le persone nella vita reale. <br><br>
+			Una volta completata la fase di registrazione, gli utenti possono selezionare i propri interessi per mezzo di topic appositi previsti dalla piattaforma, iscriversi a gruppi locali consigliati sulla base degli interessi inseriti dagli utenti e partecipare agli eventi organizzati da questi gruppi. <br><br>
+			Il focus centrale dell’intero meccanismo dell’applicazione risulta quindi essere quello del "gruppo" visto come realtà associativa e fautore di momenti di aggregazione durante l’intero anno, molto spesso non guidati da una ristretta cerchia di capi ma, anzi, promotore di iniziative da parte dei suoi stessi membri.<br><br>
+
+			La varietà di gruppi, a seconda dei topic trattati, spazia tra:<br><br>
+			<ul>
+			    <li>Gruppi di socializzazione, che hanno come obiettivo
+				principale quello di svolgere attività ludiche in
+				compagnia, molto spesso anche promotori di veri e
+				propri eventi di incontro per single;</li><br>
+			    <li>Gruppi professionali, che si pongono l’obiettivo di
+				mettere in contatto persone e professionisti di svariati
+				campi attraverso workshop o presentazioni con
+				il fine di fare crescere gli utenti dal punto di vista
+				professionale;</li><br>
+			    <li>Gruppi creativi, ovvero gruppi di progettazione e più
+				vocati ad hobby ed alla pratica delle più svariate arti.</li>
+			</ul>
+			</h4>
+		<br><br><br><br><br><br><br><br>
+		</div>	
+
+		<img class="arrow" src="arrow.svg" alt="Arrow pointing down." data-href="#heatmap"> 
+		
+		<div id="heatmap"> 
+			<br><br><br>
+			<h2> &#9741; &nbsp; Heatmap aka Distribuzione temporale degli eventi</h2> <hr>
+			<h4 style = "position:relative;margin-left:10px;">
+			Attingendo alle informazioni temporali degli eventi, presenti nei messaggi, ed applicando un’opportuna manipolazione per convertire l’originale formato timestamp in un formato umanamente più leggibile, si è stati in grado di rispondere ad una delle nostre domande di ricerca. <br>
+
+			Dopo aver infatti adattato i metadati temporali alle time zone così da avere una panoramica coerente sugli eventi Meetup tenutisi nel mondo, indipendentemente dal fuso orario, si è provveduto a realizzare una tabella di Pivot, tenente conto della numerosità di partecipanti agli eventi discriminati per giorno della settimana e per fascia oraria della giornata. Una volta realizzata la tabella è stato quindi possibile procedere alla costruzione della <strong>heatmap</strong> di seguito riportata per rappresentare al meglio queste informazioni. <br>
+			Appare infatti chiaro dalla visualizzazione come i momenti migliori della settimana per organizzare un evento risultino essere il Martedì, il Mercoledì ed il Giovedì nella fascia oraria 18.00/20.00 ed il Sabato mattina tra le 10.00 e le 12.00. Ciò si conforma bene all’intuizione che la maggior parte dell’utenza di Meetup sembrerebbe essere rappresentata da lavoratori, professionisti, che sono quindi più propensi a partecipare ad eventi in orario successivo alla fine della giornata lavorativa o durante giorni non lavorativi, ma in questo caso prevalentemente la mattina. </h4>
+				<figure>
+					<center>
+			    		<img src = "https://raw.githubusercontent.com/DBertazioli/ARmeetup/master/Visualizations/heatmap_with_barplot_v3.jpg" width="60%">
+					</center>			    		
+					<figcaption>
+			    			<font size="2">
+			    				<p style="position:absolute;right:-100px">View the full code <a href="https://github.com/DBertazioli/NeoMeetup/blob/master/Visualizations/Heatmap_event_weekdays.ipynb"><span style="color:blue" >here</span></a></p>
+							</font>
+			    		</figcaption>
+				<br>	
+				</figure>
+			
+		<img class="arrow" src="arrow.svg" alt="Arrow pointing down." data-href="#visualizingmeetups"> 
+		<div id="aboutme"> 
+			<h2>About me</h2> 
+			<p>Too lazy atm <br><br> Even lazier rn.<br><br>But I promise I will add a description as soon as I find myself one.</p> 
+			<img src="img.jpg"> 
+		</div> 
+		<img class="arrow" src="arrow.svg" alt="Arrow pointing down." data-href="#contact"> 
+		<div id="contact"> 
+			<h2>Contact</h2> 
+			<p>please, feel free to contact me, anytime.</p> 
+			<div class="flex">  
+				<a href="mailto:dario.bertazioli@campus.unimib.it"><img title="dario.bertazioli@campus.unimib.it" src="gmail.jpg"></a>  
+			</div> 
+		</div> 
+	</body> 
+	<script async defer src="scroller.js"></script> 
+</html> 

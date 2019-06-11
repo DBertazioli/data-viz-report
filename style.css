@@ -4,8 +4,9 @@
 	}
 h1{
 	font-weight:100;
-	margin-bottom:.1em}h1,
-h2{
+	margin-bottom:.1em}
+
+h1,h2{
 	letter-spacing:1;
 	font-family:Caslon;
 	color:#333;
@@ -19,12 +20,11 @@ h3{
 	letter-spacing:normal;
 	font-weight:400}h3,
 p{
-	font-size:1.6em;
 	font-family:Source Sans Pro;
 	color:#333}
 p{
 	display:inline-block;
-	width:30rem}p a,
+}
 p a:visited{
 	color:#333;
 	text-decoration:none}
@@ -52,4 +52,37 @@ nav ul li{
 nav ul li:first-child{border-left:none}li>a{font-size:1.4em;font-family:Open Sans;text-decoration:none;cursor:pointer}li>a,li>a :visited{color:#333}.arrow{cursor:pointer;width:2.5em;display:block;margin:0 auto}#contact{text-align:center;padding-bottom:3em}#contact h2{margin-left:0;text-align:center;margin-bottom:0}#contact .flex{margin-top:6rem}#contact img{width:4em;margin:0 4rem;display:inline-block}#aboutme{position:relative;margin-bottom:4em}#aboutme img{left:48%;width:40rem;height:22.5rem}#aboutme img,#aboutme p{margin-top:2em;position:absolute}#aboutme p{right:56%;text-align:right}.flex{display:flex;justify-content:center;align-items:center}#home{margin-top:3.3rem;height:27vh;padding:30vh 0;text-align:center}#aboutme,#projects{min-height:87vh}#aboutme,#contact,#projects{padding-top:13vh}.project{margin-bottom:4em;position:relative;height:12em}.project h3{top:0;position:absolute;right:52%;margin-top:1rem;vertical-align:top;display:inline-block;font-family:Caslon;color:#333;font-size:2.7em}.project a,.project a:visited{color:#333;text-decoration:none}.project a:hover{text-decoration:underline}.project p{top:0;position:absolute;left:52%}
 span{
 	font-family: Open Sans;
+}
+body{
+	margin-right: 140px;
+	margin-left: 140px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+} 
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-style: inset;
+  border-top: #bfb9c1;
+  border-width: 1px;
+}
+div.image-gallery {
+  display: block;
+  background-color: #cccccc;
+}
+
+div.image-gallery img {
+  display: block;
+  float: left;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  font-size: 1px;
+  line-height: 0;
 }

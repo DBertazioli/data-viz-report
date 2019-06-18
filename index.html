@@ -63,10 +63,10 @@
 			<br><br>  
 			<p style = "text-align: justify;">
 			<!-- Please highlight the keywords such as utenti, gruppi, eventi, topics and so on! -->
-			Meetup è stato creato nel 2002 come piattaforma per mettere in contatto le persone nella vita reale. <br/><!-- <br> --><br/>
-			Una volta completata la fase di registrazione, gli utenti possono selezionare i propri interessi per mezzo di topic appositi previsti dalla piattaforma, iscriversi a gruppi locali consigliati sulla base degli interessi inseriti dagli utenti e partecipare agli eventi organizzati da questi gruppi. <br/>
+			Meetup è stata creata nel 2002 come piattaforma per mettere in contatto le persone nella vita reale. <br/><!-- <br> --><br/>
+			Una volta completata la fase di registrazione, gli utenti possono selezionare contenuti riguardanti i propri interessi per mezzo di topic appositi previsti dalla piattaforma, iscriversi a gruppi locali consigliati sulla base degli interessi manifestati e partecipare agli eventi organizzati da questi gruppi. <br/>
 			<br/>
-			Il focus centrale dell’intero meccanismo dell’applicazione risulta quindi essere quello del "gruppo" visto come realtà associativa e fautore di momenti di aggregazione durante l’intero anno, molto spesso non guidato da una ristretta cerchia di capi ma, anzi, promotore di iniziative da parte dei suoi stessi membri.<br/>
+			Il focus centrale dell’intero meccanismo dell’applicazione risulta dunque essere quello del "gruppo" visto come realtà associativa e fautore di momenti di aggregazione durante l’intero anno, molto spesso non guidato da una ristretta cerchia di organizzatori ma, anzi, promotore di iniziative da parte dei suoi stessi membri.<br/>
 			<br/>
 
 			La varietà di gruppi, a seconda dei topic trattati, spazia tra:<br/>
@@ -85,7 +85,7 @@
 				vocati ad hobby ed alla pratica delle più svariate arti.</li>
 			</ul>
 			</p>
-		<br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br>
 		</div>	
 
 		<img class="arrow" src="arrow.svg" alt="Arrow pointing down." data-href="#heatmap"> 
@@ -94,7 +94,7 @@
 			<br><br><br>
 			<h2> &#9741; &nbsp; Heatmap aka Distribuzione temporale degli eventi</h2> <hr>
 			<p style = "text-align: justify;">
-			Attingendo alle informazioni temporali degli eventi, presenti nei messaggi, ed applicando un’opportuna manipolazione per convertire l’originale formato timestamp in un formato umanamente più leggibile, si è stati in grado di rispondere ad una delle nostre domande di ricerca. <br/>
+			Attingendo alle informazioni temporali degli eventi, presenti nei messaggi, ed applicando un’opportuna manipolazione per convertire l’originale formato timestamp in un formato umanamente più leggibile, si è stati in grado di rispondere ad una delle nostre domande di ricerca: stimare i momenti migliori per organizzare un meetup. <br/>
 			<br/>
 
 			Dopo aver infatti adattato i metadati temporali alle time zone così da avere una panoramica coerente sugli eventi Meetup tenutisi nel mondo, indipendentemente dal fuso orario, si è provveduto a realizzare una tabella di Pivot, tenente conto della numerosità di partecipanti agli eventi discriminati per giorno della settimana e per fascia oraria della giornata. Una volta realizzata la tabella è stato quindi possibile procedere alla costruzione della <strong>heatmap</strong> di seguito riportata per rappresentare al meglio queste informazioni. <br/>
@@ -107,7 +107,7 @@
 					<figcaption>
 			    			<font size="2">
 			    				<p style="position:absolute;right:300px">View the full <a href="https://github.com/DBertazioli/NeoMeetup/blob/master/Visualizations/Heatmap_event_weekdays.ipynb"><span style="color:blue" >code</span></a></p>
-			    				<p align="left">Click the viz to see full screen</p>
+			    				<p align="left">Click the viz to display in full screen</p>
 							</font>
 			    		</figcaption>
 				<br>	
@@ -168,9 +168,9 @@
 			    </ol>
 			</p>
 
-			
+		<br><br><br><br>	
 		<img class="arrow" src="arrow.svg" alt="Arrow pointing down." data-href="#euristiche"> 
-		<br>
+		
 		<div id="euristiche">  
 			<br><br><br>
 			<h2>&#9741; &nbsp; Euristiche</h2>
@@ -186,17 +186,28 @@
 							<li>Utilizzare una palette di colori più delicata rispetto all'originale "magma";</li>
 							<li>Implementare all'interno delle celle i numeri a cui la sfumatura di colore fa riferimento, così da rendere più diretta la comunicazione dell'informazione.</li>
 						</ul></li>
-						<br/>
+						<br>
 					<li>Per la mappa interattiva:
 					<ul>
 						<li>Utilizzare dei puntatori personalizzati per distinguere tra Eventi e Informazioni riassuntive per Paese;</li>
 						<li>Normalizzare i dati rappresentati nella heatmap interattiva così da ottenere "macchie di calore" più significative e non proxy della densità di popolazione.</li>
 					</ul></li>
 				</ol>
+			<br>
+			Inoltre, per entrambe le juppitate ci è stato suggerito di snellire il tempo di caricamento, inizalmente ancor più elevato dato che le mappe presentavano un numero decisamente maggiore di eventi. Anche per questo motivo abbiamo deciso di limitare le risorse mostrate, alleggerendo il carico computazionale e velocizzando il caricamento. Abbiamo aggiunto inoltre delle frasi "disclaimers" per invitare gli utenti a non scoraggiarsi per l'attesa. 
+			<br><br>
+			Un miglioramento della visualizzazione in questo senso potrebbe avvenire in futuro seguendo due diverse strade: 
+			<ol> 
+			<li> un aumento delle risorse computazionali (usando un normale pc, anzichè il servizio di free-hosting di myBinder, il caricamento con un numero maggiore di eventi risulta decisamente più tollerabile), 
+			</li>
+			<br>
+			<li> alternativamente, una riscrittura completa del codice in Java, eliminando l'intermediazione dell'API di folium e l'interfaccia con i widget di IPython (essendo questi il principale motivo di necessità di calcolo online). 	
+			</li>
+			</ol>
 			</p>
 			<!-- </h4> -->
 
-			<br>
+			<br><br><br><br><br><br><br><br><br>
 			<!-- <a name = "psico"></a> -->
 			<img class="arrow" src="arrow.svg" alt="Arrow pointing down." data-href="#psico">
 			<br><br><br>
@@ -237,7 +248,7 @@
 			<br/>
 			<!-- viz stacked -->
 			<p style="text-align: justify;">
-			Sempre in merito al questionario psicometrico, qui sotto sono riportati degli <em>Stacked-bar chart</em> rappresentanti la proporzione, per ogni domanda, di punteggi positivi e negativi, sempre per entrambe le visualizzazioni (a sinistra la visualizzazione statica mentre, a destra, la mappa interattiva). Come si può vedere all'interno dei chart sono rappresentati gli intervalli di confidenza al 95% per determinare l'affidabilità delle stime.
+			Sempre in merito al questionario psicometrico, di seguito sono riportati alcuni <em>Stacked-bar chart</em> rappresentanti, per ogni domanda, la proporzione di punteggi positivi e negativi, sempre per entrambe le visualizzazioni (a sinistra la visualizzazione statica mentre, a destra, la mappa interattiva). Come si può vedere all'interno dei chart sono rappresentati gli intervalli di confidenza al 95% per determinare l'affidabilità delle stime.
 			</p>
 			<br/>
 			<figure>
